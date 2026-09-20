@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etiqa Instant Travel Insurance — Instant Toggle Launch Showcase</title>
+  <meta name="description" content="Forward your flight itinerary from Gmail, tap once, and get instantly protected for under RM 80. The AI-powered travel insurance journey by Etiqa & Maybank.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <div class="logo-badge">
+          <span class="brand-etiqa">etiqa</span>
+          <span class="brand-divider">×</span>
+          <span class="brand-maybank">Maybank</span>
+        </div>
+        <span class="badge-tag">AI Innovation Lab</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#video-section" class="nav-item active">Launch Video</a>
+        <a href="#journey-section" class="nav-item">Interactive Journey</a>
+        <a href="#feedback-section" class="nav-item">Customer Feedback</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://etiqa-instant-travel-insurance-32077444844.us-west1.run.app" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+          Open Live Mockup ↗
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-pill animate-fade-in">
+          <span class="pill-dot"></span>
+          <span>1-Forward Itinerary Detection • AI Underwriting in 0.8s • Under RM 80</span>
+        </div>
+        <h1 class="hero-title">
+          Forward. Confirm. <span class="gradient-text">Protected in 1-Tap.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Bought a flight ticket? Simply forward your airline booking confirmation from your inbox to <code class="code-badge">travel@etiqa.com.my</code>. Our AI extracts your trip details and sends back a ready-to-activate quote in seconds.
+        </p>
+
+        <!-- Main Video Reel Showcase -->
+        <div id="video-section" class="video-showcase-wrapper">
+          <div class="video-container" id="videoContainer">
+            
+            <!-- Big Start Overlay (for instant Audio & Playback) -->
+            <div class="video-play-overlay" id="videoPlayOverlay">
+              <div class="overlay-content">
+                <button class="big-play-btn" id="bigPlayBtn">
+                  <span class="play-arrow">▶</span>
+                </button>
+                <h3>Watch 16s Fast-Paced Launch Film 🔊</h3>
+                <p>Click to watch the full Gmail itinerary forwarding & 1-tap quote journey</p>
+              </div>
+            </div>
+
+            <!-- Canvas for Confetti & Particles -->
+            <canvas id="fxCanvas" class="fx-canvas"></canvas>
+
+            <!-- Video Screen Display -->
+            <div class="video-screen" id="videoScreen">
+              <!-- Background Ambient Glow & Beat Pulsar -->
+              <div class="ambient-glow" id="ambientGlow"></div>
+              <div class="grid-lines-bg"></div>
+
+              <!-- Animated Simulated Cursor for realistic demo clicks -->
+              <div class="sim-cursor" id="simCursor">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.34-4.34a.5.5 0 0 1 .35-.15h6.16c.45 0 .67-.54.35-.85L5.85 3.56a.5.5 0 0 0-.35-.35z" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+                </svg>
+              </div>
+
+              <!-- Scene 1: Gmail Trigger (Maybank Notification) -->
+              <div class="scene scene-1" id="scene1">
+                <div class="scene-badge">Scene 01 • Gmail Detection</div>
+                <div class="gmail-window">
+                  <div class="gmail-top-bar">
+                    <div class="gmail-logo">
+                      <svg width="22" height="16" viewBox="0 0 24 18">
+                        <path fill="#4285F4" d="M1.5 18h3.75V8.25L0 4.5v12c0 .83.67 1.5 1.5 1.5z"/>
+                        <path fill="#34A853" d="M18.75 18h3.75c.83 0 1.5-.67 1.5-1.5V4.5L18.75 8.25V18z"/>
+                        <path fill="#EA4335" d="M18.75 0l-6.75 5.25L5.25 0H1.5C.67 0 0 .67 0 1.5v3L12 12l12-7.5v-3c0-.83-.67-1.5-1.5-1.5h-3.75z"/>
+                        <path fill="#FBBC05" d="M5.25 8.25V18h13.5V8.25L12 13.5 5.25 8.25z"/>
+                      </svg>
+                      <span>Gmail</span>
+                    </div>
+                    <div class="gmail-search-mock">
+                      <span>🔍 Search mail</span>
+                    </div>
+                  </div>
+                  <div class="gmail-body">
+                    <div class="email-item unread-email animate-pulse-border">
+                      <div class="email-sender-icon mb-gold">M</div>
+                      <div class="email-text-content">
+                        <div class="email-row-top">
+                          <span class="sender-name">Maybank2u Alerts</span>
+                          <span class="email-time">Just now</span>
+                        </div>
+                        <div class="email-subject">✈️ Flight to Tokyo Detected — Forward Itinerary for 1-Tap Travel Insurance</div>
+                        <div class="email-snippet">We noticed your AirAsia booking (KUL ➔ NRT). Forward your confirmation to <strong>travel@etiqa.com.my</strong> for instant quote.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="scene-caption">Your bank detects flight purchases and prompts you in your inbox.</h2>
+              </div>
+
+              <!-- Scene 2: Forwarding Itinerary -->
+              <div class="scene scene-2 hidden" id="scene2">
+                <div class="scene-badge">Scene 02 • 1-Forward Action</div>
+                <div class="gmail-window forward-view">
+                  <div class="gmail-top-bar">
+                    <span class="back-arrow">←</span>
+                    <span class="view-title">AirAsia Booking Confirmation - Flight AK-882</span>
+                  </div>
+                  <div class="itinerary-preview-box">
+                    <div class="flight-ticket-mini">
+                      <div class="ticket-route">
+                        <span class="city">KUL (Kuala Lumpur)</span>
+                        <span class="plane-icon">✈️</span>
+                        <span class="city">NRT (Tokyo, Japan)</span>
+                      </div>
+                      <div class="ticket-meta">
+                        <span>Date: <strong>12 Oct – 20 Oct (8 Days)</strong></span>
+                        <span>Passenger: <strong>Vincent Lim (1 Pax)</strong></span>
+                      </div>
+                    </div>
+                    <!-- Forward Compose Box -->
+                    <div class="forward-composer">
+                      <div class="compose-header">
+                        <span class="to-label">To:</span>
+                        <div class="to-pill">travel@etiqa.com.my</div>
+                      </div>
+                      <div class="compose-footer">
+                        <button class="btn-gmail-send" id="btnGmailSend">
+                          <span>Send Itinerary</span>
+                          <span class="send-arrow">➔</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="scene-caption">Hit forward to <code class="code-badge">travel@etiqa.com.my</code>. No apps to install.</h2>
+              </div>
+
+              <!-- Scene 3: AI Instant Parsing & Response Email -->
+              <div class="scene scene-3 hidden" id="scene3">
+                <div class="scene-badge">Scene 03 • AI Extraction & Instant Reply</div>
+                <div class="ai-scanner-card" id="scannerCard">
+                  <div class="scanner-header">
+                    <div class="ai-pulsing-node"></div>
+                    <span>Etiqa Intelligent Document Parser</span>
+                    <span class="status-tag" id="aiStatusTag">Parsed in 0.8s ⚡</span>
+                  </div>
+                  <div class="scanner-body">
+                    <div class="laser-scanner"></div>
+                    <div class="parsed-item" id="pItem1">
+                      <span class="p-label">Destination</span>
+                      <span class="p-val highlight">Tokyo, Japan (NRT) 🇯🇵</span>
+                    </div>
+                    <div class="parsed-item" id="pItem2">
+                      <span class="p-label">Dates & Duration</span>
+                      <span class="p-val highlight">12 Oct – 20 Oct (8 Days)</span>
+                    </div>
+                    <div class="parsed-item" id="pItem3">
+                      <span class="p-label">Automated Quote</span>
+                      <span class="p-val gold">TripCare 360 (RM 48.00)</span>
+                    </div>
+                  </div>
+                  <!-- Instant Reply Email Pop-in -->
+                  <div class="reply-email-popin animate-slide-up">
+                    <div class="etiqa-mail-header">
+                      <span class="etiqa-tag">etiqa</span>
+                      <span class="mail-title">⚡ Your Travel Insurance Quote is Ready! (RM 48.00)</span>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="scene-caption">AI extracts itinerary parameters and replies in 0.8 seconds.</h2>
+              </div>
+
+              <!-- Scene 4: 1-Click Confirmation & MAE Checkout -->
+              <div class="scene scene-4 hidden" id="scene4">
+                <div class="scene-badge">Scene 04 • 1-Click Confirmation</div>
+                <div class="checkout-card animate-scale-up" id="checkoutCard">
+                  <div class="checkout-top">
+                    <span class="policy-name">TripCare 360 Comprehensive</span>
+                    <span class="policy-price">RM 48.00</span>
+                  </div>
+                  <div class="checkout-perks">
+                    <div class="perk-tag">✓ Medical Coverage up to RM 300,000</div>
+                    <div class="perk-tag">✓ Automated Flight Delay Payout</div>
+                    <div class="perk-tag">✓ Destination: Tokyo (8 Days • 1 Pax)</div>
+                  </div>
+                  <button class="btn-1tap-pay" id="videoTapBtn">
+                    <span class="tap-finger-icon">👆</span>
+                    <span>Confirm & Pay with MAE — RM 48.00</span>
+                  </button>
+                  <div class="success-ripple" id="successRipple"></div>
+                </div>
+                <h2 class="scene-caption">Confirm details are correct. 1-Tap payment. Under RM 80.</h2>
+              </div>
+
+              <!-- Scene 5: Instant Policy Active -->
+              <div class="scene scene-5 hidden" id="scene5">
+                <div class="scene-badge">Scene 05 • Covered & Protected</div>
+                <div class="active-policy-badge animate-float" id="policyBadge">
+                  <div class="verified-icon">🛡️</div>
+                  <div class="badge-title">Etiqa Policy Active</div>
+                  <div class="badge-policy-no">Policy # ETQ-2024-8842 • RM 48.00</div>
+                  <div class="badge-flight-info">KUL ➔ NRT • Tokyo • Oct 12-20</div>
+                  <div class="auto-claim-banner">
+                    <span class="pulse-dot"></span> Automated Flight Delay Payout Linked to Maybank
+                  </div>
+                </div>
+                <h2 class="scene-caption">Forward. Confirm. Protected in seconds.</h2>
+              </div>
+
+              <!-- Audio Waveform Visualizer Bar -->
+              <div class="audio-visualizer-bar" id="audioVisualizer">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              </div>
+            </div>
+
+            <!-- Video Controls Bar -->
+            <div class="video-controls-bar">
+              <button class="ctrl-btn" id="playPauseBtn" title="Play/Pause">
+                <span id="playPauseIcon">▶</span>
+              </button>
+              
+              <div class="timeline-slider-wrapper">
+                <div class="timeline-track" id="timelineTrack">
+                  <div class="timeline-fill" id="timelineFill"></div>
+                  <!-- Scene Markers (Fast 16s layout) -->
+                  <div class="scene-marker" style="left: 0%" title="Gmail Alert"></div>
+                  <div class="scene-marker" style="left: 20%" title="Forward Itinerary"></div>
+                  <div class="scene-marker" style="left: 42.5%" title="AI Parsing"></div>
+                  <div class="scene-marker" style="left: 63.75%" title="1-Tap Checkout"></div>
+                  <div class="scene-marker" style="left: 84.375%" title="Active Policy"></div>
+                </div>
+              </div>
+
+              <div class="time-display" id="timeDisplay">0:00 / 0:16</div>
+
+              <!-- Music Track Selector -->
+              <select id="musicTrackSelect" class="mini-select" title="Change Background Music">
+                <option value="happy-beats-business-moves-vol-1-by-ende-dot-app.mp3">🎵 Happy Beats Vol 1</option>
+                <option value="happy-beats-business-moves-vol-10-by-ende-dot-app.mp3">🎵 Beats Vol 10</option>
+                <option value="happy-beats-business-moves-vol-11-by-ende-dot-app.mp3">🎵 Beats Vol 11</option>
+                <option value="happy-beats-business-moves-vol-12-by-ende-dot-app.mp3">🎵 Beats Vol 12</option>
+              </select>
+
+              <button class="ctrl-btn" id="soundToggleBtn" title="Toggle Sound">
+                <span id="soundIcon">🔊</span>
+              </button>
+              <button class="ctrl-btn" id="restartBtn" title="Restart Video">
+                <span>↺</span>
+              </button>
+            </div>
+
+            <!-- Scene Selector Pills -->
+            <div class="scene-pills">
+              <button class="scene-pill active" data-scene="1">1. Gmail Alert</button>
+              <button class="scene-pill" data-scene="2">2. Forward Email</button>
+              <button class="scene-pill" data-scene="3">3. AI Parsing</button>
+              <button class="scene-pill" data-scene="4">4. 1-Tap Checkout</button>
+              <button class="scene-pill" data-scene="5">5. Active Policy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Journey Sandbox Section -->
+    <section id="journey-section" class="interactive-sandbox-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Interactive Simulation</span>
+          <h2 class="section-title">Test the Instant Toggle Customer Journey</h2>
+          <p class="section-desc">
+            Experience how the end-to-end flow works for a customer in real-time. Try customizing flight details below:
+          </p>
+        </div>
+
+        <div class="sandbox-grid">
+          <!-- Step 1: Simulator Configurator -->
+          <div class="sandbox-card">
+            <h3 class="card-title">1. Flight Purchase Simulation</h3>
+            <div class="form-group">
+              <label>Airline Booking:</label>
+              <select id="simAirline" class="custom-select">
+                <option value="AirAsia (AK-882)">AirAsia (AK-882)</option>
+                <option value="Malaysia Airlines (MH-070)">Malaysia Airlines (MH-070)</option>
+                <option value="Singapore Airlines (SQ-113)">Singapore Airlines (SQ-113)</option>
+                <option value="Batik Air (OD-304)">Batik Air (OD-304)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Destination:</label>
+              <select id="simDestination" class="custom-select">
+                <option value="Tokyo, Japan 🇯🇵">Tokyo, Japan 🇯🇵</option>
+                <option value="London, United Kingdom 🇬🇧">London, United Kingdom 🇬🇧</option>
+                <option value="Bangkok, Thailand 🇹🇭">Bangkok, Thailand 🇹🇭</option>
+                <option value="Sydney, Australia 🇦🇺">Sydney, Australia 🇦🇺</option>
+                <option value="Seoul, South Korea 🇰🇷">Seoul, South Korea 🇰🇷</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Duration (Days):</label>
+                <input type="number" id="simDays" class="custom-input" value="8" min="1" max="60">
+              </div>
+              <div class="form-group">
+                <label>Travelers:</label>
+                <input type="number" id="simTravelers" class="custom-input" value="1" min="1" max="10">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Coverage Tier (Under RM 80):</label>
+              <div class="plan-toggle-group">
+                <button class="plan-toggle-btn" data-plan="Basic" data-rate="4.5">Basic (RM 36)</button>
+                <button class="plan-toggle-btn active" data-plan="Gold" data-rate="6">Gold (RM 48)</button>
+                <button class="plan-toggle-btn" data-plan="Platinum" data-rate="9">Platinum (RM 72)</button>
+              </div>
+            </div>
+
+            <button class="btn-primary full-width" id="btnSimulateTrigger">
+              ⚡ Trigger Bank Flight Detection
+            </button>
+          </div>
+
+          <!-- Step 2: Live Simulator Output -->
+          <div class="sandbox-card sim-output-card">
+            <h3 class="card-title">2. Real-time Customer Experience</h3>
+            
+            <div class="sim-flow-container" id="simFlowContainer">
+              <!-- Step A: Idle State -->
+              <div class="sim-state active" id="simStateIdle">
+                <div class="empty-state-icon">✈️</div>
+                <p>Click "Trigger Bank Flight Detection" to run the AI quote generation journey.</p>
+              </div>
+
+              <!-- Step B: Bank Alert Received in Gmail -->
+              <div class="sim-state hidden" id="simStateAlert">
+                <div class="sim-bank-alert">
+                  <div class="alert-header">
+                    <span class="mb-badge">Maybank Alert</span>
+                    <span class="time-ago">Just now</span>
+                  </div>
+                  <div class="alert-body">
+                    <strong>Flight Detected:</strong> <span id="simAlertAirline">AirAsia</span> to <span id="simAlertDest">Tokyo</span>
+                  </div>
+                  <div class="email-action-box">
+                    <p>Forward booking confirmation email to:</p>
+                    <div class="copy-email-row">
+                      <code>travel@etiqa.com.my</code>
+                      <button class="btn-micro" id="btnSimForward">Simulate Forward Email ➔</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step C: AI Extraction Progress -->
+              <div class="sim-state hidden" id="simStateParsing">
+                <div class="parsing-spinner"></div>
+                <h4>Etiqa AI parsing itinerary...</h4>
+                <div class="parsing-pills">
+                  <span class="tag-pill">Matching PNR</span>
+                  <span class="tag-pill">Checking Flight Risks</span>
+                  <span class="tag-pill">Underwriting Quote</span>
+                </div>
+              </div>
+
+              <!-- Step D: 1-Tap Policy Ready -->
+              <div class="sim-state hidden" id="simStateQuoteReady">
+                <div class="quote-result-box">
+                  <div class="quote-header">
+                    <span class="quote-badge">Pre-filled Quote Ready</span>
+                    <span class="quote-total" id="simTotalAmount">RM 48.00</span>
+                  </div>
+                  <div class="quote-details">
+                    <div class="q-row"><span>Destination:</span> <strong id="simQuoteDest">Tokyo, Japan</strong></div>
+                    <div class="q-row"><span>Duration:</span> <strong id="simQuoteDays">8 Days</strong></div>
+                    <div class="q-row"><span>Travelers:</span> <strong id="simQuotePax">1 Pax</strong></div>
+                    <div class="q-row"><span>Selected Plan:</span> <strong id="simQuotePlan">Gold Tier</strong></div>
+                  </div>
+                  <button class="btn-gold-action full-width" id="btnSimBuyNow">
+                    ✓ Pay & Activate Instantly with MAE
+                  </button>
+                </div>
+              </div>
+
+              <!-- Step E: Policy Active Certificate -->
+              <div class="sim-state hidden" id="simStateSuccess">
+                <div class="certificate-box">
+                  <div class="cert-icon">🛡️</div>
+                  <h4>Policy Successfully Active!</h4>
+                  <div class="cert-id" id="simCertPolicyNo">ETQ-2026-7791</div>
+                  <p class="cert-msg">Automated flight delay protection is now active for this booking.</p>
+                  <button class="btn-secondary btn-sm" id="btnSimReset">Test Another Scenario</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Potential Customer Feedback & Validation Section -->
+    <section id="feedback-section" class="feedback-section">
+      <div class="container">
+        <div class="feedback-box">
+          <div class="feedback-header">
+            <span class="section-badge">Pilot Group Survey</span>
+            <h2>Would you use this Instant Insurance Toggle?</h2>
+            <p>Please share your quick thoughts below — your feedback shapes this new feature.</p>
+          </div>
+
+          <form id="feedbackForm" class="feedback-form">
+            <div class="feedback-question">
+              <label class="q-label">1. How likely are you to use this 1-tap email forward feature?</label>
+              <div class="rating-group" id="likelihoodRating">
+                <label class="radio-card"><input type="radio" name="likelihood" value="Definitely" checked><span>😍 Definitely Yes</span></label>
+                <label class="radio-card"><input type="radio" name="likelihood" value="Probably"><span>👍 Probably</span></label>
+                <label class="radio-card"><input type="radio" name="likelihood" value="Maybe"><span>🤔 Maybe</span></label>
+                <label class="radio-card"><input type="radio" name="likelihood" value="No"><span>👎 No (Prefer manual)</span></label>
+              </div>
+            </div>
+
+            <div class="feedback-question">
+              <label class="q-label">2. Which feature matters most to you?</label>
+              <div class="features-checklist">
+                <label class="check-item"><input type="checkbox" name="features" value="No Forms" checked><span>Zero manual forms to fill</span></label>
+                <label class="check-item"><input type="checkbox" name="features" value="Affordable Pricing" checked><span>Affordable pricing (Under RM 80)</span></label>
+                <label class="check-item"><input type="checkbox" name="features" value="Auto Delay Payout" checked><span>Instant auto-claim payout on flight delays</span></label>
+                <label class="check-item"><input type="checkbox" name="features" value="WhatsApp"><span>Option to forward via WhatsApp instead of Email</span></label>
+              </div>
+            </div>
+
+            <div class="feedback-question">
+              <label class="q-label">3. Any comments or suggestions for the product team?</label>
+              <textarea id="feedbackComments" class="custom-textarea" placeholder="What would make this experience 10x better for you?"></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group flex-1">
+                <label>Your Email (Optional for early access updates):</label>
+                <input type="email" id="feedbackEmail" class="custom-input" placeholder="name@example.com">
+              </div>
+              <button type="submit" class="btn-primary" id="btnSubmitFeedback">
+                Submit Feedback
+              </button>
+            </div>
+            <div class="feedback-success-msg hidden" id="feedbackSuccessMsg">
+              🎉 Thank you! Your feedback has been recorded.
+            </div>
+          </form>
+
+          <!-- Live Community Feedback List -->
+          <div class="recent-feedback-feed" id="recentFeedbackFeed">
+            <h4 class="feed-title">Recent Feedback from Pilot Testers</h4>
+            <div class="feed-items" id="feedItemsContainer">
+              <!-- Populated dynamically via app.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p><strong>Etiqa Instant Travel Insurance Toggle</strong> • AI Product Launch Prototype</p>
+        <p class="muted-text">Powered by Etiqa Insurance & Maybank Open Innovation</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://etiqa-instant-travel-insurance-32077444844.us-west1.run.app" target="_blank" rel="noopener noreferrer">Live Mockup Link</a>
+        <a href="https://github.com/latent-spaces/brag" target="_blank" rel="noopener noreferrer">Built with /brag</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
